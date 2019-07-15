@@ -1,0 +1,140 @@
+body
+{
+  background-color: #e0d3de;
+}
+
+.heading
+{
+  
+  display: grid;
+  grid-template-columns: 1fr 0.1fr;
+  grid-template-rows: 1fr 1fr;
+  border: solid 1px grey;
+  border-radius: 2px;
+  margin: 2% 10%;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0px 3px 10px 1px black;
+}
+
+.Desc
+{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.updateTodo
+{
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+h1
+{
+  color: #094074;
+  text-align: center;
+  
+}
+.burger span
+{
+  position: relative;
+  width: 20px;
+  height:3px;
+  background-color: black;
+  margin: 3px;
+  bottom: 40px;
+  left: 180%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.addBtn
+{
+  position: fixed !important;
+  width:8%;
+  font-size: 105%;
+  display: block;
+  top: 75px;
+  right: 10px;
+}
+
+
+.main
+{
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-rows:  25px 1fr;
+}
+.content
+{
+  display: grid;
+  grid-template-rows:1fr 1fr;
+  padding: 5% 0%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  
+}
+
+
+.title
+{
+  position: fixed;
+  display:grid;
+  grid-template-rows: 1fr 20px;
+  width: 100%;
+  padding: 2px;
+  background-color: #88d498;
+  height: 70px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 170%;
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 7px;
+  text-shadow: 2px 2px #f45b69;
+}
+
+.tagLine
+{
+  font-size: 13px;
+  letter-spacing: 8px;
+  text-shadow: 2px 2px #d3747c;
+  color: black;
+}
+
+.submitBtn
+{
+  background-color: coral;
+  border-radius: 5px;
+  width: 100px;
+  height: 35px;
+  float: right;
+  box-shadow: -1px 8px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+.delete
+{
+  cursor: pointer;
+  position: grid;
+}
+
+.edit
+{
+  margin-left: 25px;
+}
+.edit:hover
+{
+  color: chocolate;
+  transition: all 0.2s ease;
+  font-size: 20px;
+}
+
+.delete:hover
+{
+  color: chocolate;
+  transition: all 0.2s ease;
+  font-size: 20px;
+ 
+}
